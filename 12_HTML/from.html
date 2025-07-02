@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header><!--머릿말말-->
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+    </header>
+    <hr>
+    <main>
+    <from><!--주요 내용-->
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="본명을 입력하세요." name="name">
+            <br>
+            <label for="email">이메일 주소</label>
+            <input type="email" id="email" placeholder="메일 주소를 입력하세요" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>설문</legend>
+
+            <p>연령대가 어떻게 되십니까?</p>
+            <input type="radio" id="teen" name="age">
+            <label for="teen">10대</label>
+            <input type="radio" id="twenty" name="age">
+            <label for="twenty">20대</label >
+            <input type="radio" id="thirty" name="age">
+            <label for="thirty">30대</label>
+            <input type="radio" id="fourty" name="age">
+            <label for="fourty">40대</label>
+            <input type="radio" id="fifty" name="age">
+            <label for="fifty">50대</label>
+            <input type="radio" id="other" name="age">
+            <label for="other">그 외</label>
+
+            <p>학원을 알게된 경로는 어떻게 되십니까?</p>
+            <!--직접 입력한 선택 코드! 과제임~-->
+            <input type="radio" id="SNS" name="age">
+            <label for="SNS">SNS(인스타그램,트위터 등)</label>
+            <input type="radio" id="poster" name="age">
+            <label for="poster">전단지(버스정류장, 게시판등)</label >
+            <input type="radio" id="center" name="age">
+            <label for="center">공공기관(동사무소,고용복지센터 등)</label>
+
+
+            <p>학원 선택 시 그 기준은 어떻게 되십니까?</p>
+                <input type="checkbox" id="position" name="academy">
+                <label for="position">위치</label>
+                <input type="checkbox" id="price" name="academy">
+                <label for="price">힉원비</label>
+                <input type="checkbox" id="teacher" name="academy">
+                <label for="teacher">강사</label>
+                <input type="checkbox" id="infra" name="academy">
+                <label for="infra">시설</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>기타 의견</legend>
+            <textarea rows="3" cols="30" name="comment"></textarea>
+        </fieldset>
+        <input type="submit">
+    </from>
+    </main>
+    <hr>
+    <footer><!--맺음말-->
+    <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+    <!--단일 선택이 아니더라도 name 요소로 구분지어주면 좋다.-->
+    <!--단일 선택은 radio, 다중 선택은 checkbox-->
+</body>
+</html>
